@@ -37,14 +37,4 @@ time ./build/src-cpp/xges --input samples/Data_var200_samples600.npy --output cp
 time ./build/src-cpp/xges --batch --input samples/Data_var200_samples600.npy --output gpu_result.txt --stats gpu_stats.txt
 ```
 
-통계 파일(`cpu_stats.txt`, `gpu_stats.txt`)에서 실행 시간과 성능을 확인 가능.
-
-## 옵션
-
-- `--input`: 입력 데이터 파일 (.npy)
-- `--output`: 출력 그래프 파일 (기본: `xges-graph.txt`)
-- `--stats`: 통계 파일 (기본: `xges-stats.txt`)
-- `--batch`: GPU batched mode 사용
-- `--backend`: GPU 백엔드 선택 (`cusolver` 또는 `cublas`)
-- `--alpha`: BIC 스코어 알파 파라미터 (기본: 2.0)
-- `--verbose`: 로그 레벨 (0-3, 기본: 1)
+`cpu_stats.txt`, `gpu_stats.txt`에서 실행 시간과 성능 확인 가능
